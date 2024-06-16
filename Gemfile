@@ -63,7 +63,8 @@ gem 'activerecord-import'
 ##--- gems for server & infra configuration ---##
 gem 'dotenv-rails', '>= 3.0.0'
 gem 'foreman'
-gem 'puma'
+# gem 'puma'
+gem 'puma', '~> 4.1'
 gem 'webpacker'
 # metrics on heroku
 gem 'barnes'
@@ -188,7 +189,7 @@ group :development do
   gem 'bullet'
   gem 'letter_opener'
   gem 'scss_lint', require: false
-  gem 'web-console', '>= 4.2.1'
+  # gem 'web-console', '>= 4.2.1'
 
   # used in swagger build
   gem 'json_refs'
@@ -201,6 +202,13 @@ group :development do
   gem 'stackprof'
   # Should install the associated chrome extension to view query logs
   gem 'meta_request', '>= 0.8.0'
+
+  gem 'capistrano',             require: false
+  gem 'capistrano-secrets-yml', require: false
+  gem 'capistrano-rbenv',       require: false
+  gem 'capistrano-rails',       require: false
+  gem 'capistrano-bundler',     require: false
+  gem 'capistrano3-puma',       require: false
 end
 
 group :test do
