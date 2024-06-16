@@ -68,6 +68,8 @@ gem 'puma', '~> 4.1'
 gem 'webpacker'
 # metrics on heroku
 gem 'barnes'
+gem 'whenever'
+
 
 ##--- gems for authentication & authorization ---##
 gem 'devise', '>= 4.9.4'
