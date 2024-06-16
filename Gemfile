@@ -205,6 +205,9 @@ group :development do
   # Should install the associated chrome extension to view query logs
   gem 'meta_request', '>= 0.8.0'
 
+  gem 'ed25519', '>= 1.2', '< 2.0'
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
   gem 'capistrano',             require: false
   gem 'capistrano-secrets-yml', require: false
   gem 'capistrano-rbenv',       require: false
