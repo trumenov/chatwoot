@@ -30,7 +30,7 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :main
-set :branch,        :develop
+set :branch,        :main19
 
 
 
@@ -42,7 +42,7 @@ set :branch,        :develop
 set :rails_env, 'production'
 set :stage, 'production'
 # set :deploy_to, "~/projects/#{fetch(:application)}"
-# set :branch, 'develop'
+# set :branch, 'main19'
 # set :linked_files, %w[config/application.yml]
 # set :linked_dirs, %w[log tmp backup]
 # set :passenger_restart_with_touch, true
