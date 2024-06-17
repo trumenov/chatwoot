@@ -43,6 +43,8 @@ set :rails_env, 'production'
 set :stage, 'production'
 # set :deploy_to, "~/projects/#{fetch(:application)}"
 # set :branch, 'main19'
+# set :linked_files, %w[config/secrets.yml .env]
+set :linked_files, fetch(:linked_files, []).push('.env')
 # set :linked_files, %w[config/application.yml]
 # set :linked_dirs, %w[log tmp backup]
 # set :passenger_restart_with_touch, true
